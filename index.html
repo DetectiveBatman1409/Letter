@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Will the Raindrops Fall? 💌</title>
+  <!-- Using Montserrat as a modern alternative similar to Aptos -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f9e3c3;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    #letter-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      position: relative;
+    }
+    /* Hide radio buttons */
+    input[type="radio"] {
+      display: none;
+    }
+    /* Style each page to resemble a handwritten letter page */
+    .pages .page {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .pages .page {
+      display: none;
+    }
+    /* Display the appropriate page based on which radio button is checked */
+    #page0:checked ~ .pages .page0,
+    #page1:checked ~ .pages .page1,
+    #page2:checked ~ .pages .page2,
+    #page3:checked ~ .pages .page3,
+    #page4:checked ~ .pages .page4,
+    #page5:checked ~ .pages .page5,
+    #page6:checked ~ .pages .page6,
+    #page7:checked ~ .pages .page7,
+    #page8:checked ~ .pages .page8,
+    #page9:checked ~ .pages .page9,
+    #page10:checked ~ .pages .page10,
+    #page11:checked ~ .pages .page11 {
+      display: block;
+    }
+    h1 {
+      font-size: 28px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+      color: #5a3e36;
+      line-height: 1.5;
+      text-align: left;
+      margin-bottom: 1em;
+    }
+    .button {
+      display: inline-block;
+      background-color: #ffafcc;
+      padding: 10px 15px;
+      margin: 10px;
+      font-size: 18px;
+      text-decoration: none;
+      color: #000;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #ff6b81;
+      color: #fff;
+    }
+    .nav-buttons {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="letter-container">
+    <!-- Radio inputs for pages (from page0 to page11) -->
+    <input type="radio" name="page" id="page0" checked>
+    <input type="radio" name="page" id="page1">
+    <input type="radio" name="page" id="page2">
+    <input type="radio" name="page" id="page3">
+    <input type="radio" name="page" id="page4">
+    <input type="radio" name="page" id="page5">
+    <input type="radio" name="page" id="page6">
+    <input type="radio" name="page" id="page7">
+    <input type="radio" name="page" id="page8">
+    <input type="radio" name="page" id="page9">
+    <input type="radio" name="page" id="page10">
+    <input type="radio" name="page" id="page11">
+    
+    <div class="pages">
+      <!-- Page 0: Closed Letter -->
+      <div class="page page0">
+        <h1>📜</h1>
+        <label class="button" for="page1">Open Letter</label>
+      </div>
+      
+      <!-- Page 1: Interactive Letter Introduction -->
+      <div class="page page1">
+        <h1>Will the Raindrops Fall?</h1>
+        <p>This is an interactive letter. Read on to find out more.</p>
+        <div class="nav-buttons">
+          <label class="button" for="page0">⬅️ Back</label>
+          <label class="button" for="page2">Next ➡️</label>
+        </div>
+      </div>
+      
+      <!-- Page 2: Introduction & Initial Meeting -->
+      <div class="page page2">
+        <p>
+          This is a story about two people - Sahil and Sanya.
+          Mumbai was never a city of quiet moments. Between the rush of local trains and the endless honking of taxis, Sahil met Sanya in college—not just through random classes, but through a club they had both impulsively joined. 
+        </p>
+        <p>
+          It started with casual conversations during meetings, playful banter, and brainstorming sessions for events. Somewhere between debating over theme ideas and pulling off last-minute fixes, their friendship deepened.
+        </p>
+        <div class="nav-buttons">
+          <label class="button" for="page1">⬅️ Back</label>
+          <label class="button" for="page3">Next ➡️</label>
+        </div>
+      </div>
+      
+      <!-- Page 3: Growing Connection -->
+      <div class="page page3">
+        <p>
+          Sanya was the kind of person who could turn a mundane task into an adventure, slipping in witty remarks between serious discussions. 
+        </p>
+        <p>
+          Sahil, on the other hand, was quieter—observant, thoughtful, someone who carried his emotions like a well-kept secret. But somehow, with her, words came easily.
+        </p>
+        <div class="nav-buttons">
+          <label class="button" for="page2">⬅️ Back</label>
+          <label class="button" for="page4">Next ➡️</label>
+        </div>
+      </div>
+      
+      <!-- Page 4: Confession and Its Aftermath -->
+      <div class="page page4">
+        <p>
+          Their friendship grew in stolen moments—laughing over bad canteen food, late-night assignment panic, and shared walks along the campus corridors. Somewhere between all of it, Sahil found himself drawn to her in a way that went beyond friendship.
+        </p>
+        <p>
+          It wasn’t just her infectious energy or the way he could talk with her—it was the way she saw him, really understand him, in a way no one else ever had.
+        </p>
+        <div class="nav-buttons">
+          <label class="button" for="page3">⬅️ Back</label>
+          <label class="button" for="page5">Next ➡️</label>
+        </div>
+      </div>
+      
+      <!-- Page 5: The Passage of Time -->
+      <div class="page page5">
+        <p>
+          One evening, as they sat on the steps of their college library watching the city lights flicker in the distance, he finally said it. "Sanya, I think I love you."
+        </p>
+        <p>
+          She turned to him, her smile soft but knowing. "Sahil... I like what we have. I like us. But not in the way you do."
+          <label class="button" for="page4">⬅️ Back</label>
+          <label class="button" for="page6">Next ➡️</label>
+        </div>
+      </div>
+      
+      <!-- Page 6: Distance and Inner Conflict -->
+      <div class="page page6">
+        <p>
+          The words landed gently, but they still cut. He chuckled, trying to mask the sting. “So, you’re telling me I survived three years of engineering math just to get friend-zoned?”
+        </p>
+        <p>
+          She rolled her eyes, nudging him with her shoulder. “Shut up, Sahil.” And so, he stayed with her as a friend. Because even if it wasn’t the love he wanted, he wanted her to be happy.
+        </p>
+        <div class="nav-buttons">
+          <label class="button" for="page5">⬅️ Back</label>
+          <label class="button" for="page7">Next ➡️</label>
+        </div>
+      </div>
+      
+      <!-- Page 7: Reunion and Reflection -->
+      <div class="page page7">
+        <p>
+          Years passed. Sanya fell in and out of relationships. Sahil tried to move on in his own way— went out with few people, hoping to find something that felt right. But something was always missing.
+        </p>
+        <p>
+          Conversations felt forced, laughter didn’t come as easily, and every now and then, in the quiet moments, his mind would drift back to her. It wasn’t that he compared, but rather that nothing ever made sense the way it did with Sanya.
+        <div class="nav-buttons">
+          <label class="button" for="page6">⬅️ Back</label>
+          <label class="button" for="page8">Next ➡️</label>
+        </div>
+      </div>
+      
+      <!-- Page 8: Final Reflection and Request -->
+      <div class="page page8">
+        <p>
+          And every time he saw her with someone else, it felt like he was watching a story unfold where he was never meant to be the protagonist. 
+        </p>
+        <p>
+          Slowly, he started stepping back—replying less, calling less, until eventually, the silence between them grew too loud to ignore. He had to distance himself from her to repeat this endless cycle of falling for her, over and over.
+        </p>
+        <div class="nav-buttons">
+          <label class="button" for="page7">⬅️ Back</label>
+          <label class="button" for="page9">Next ➡️</label>
+        </div>
+      </div>
+      
+      <!-- Page 9: Final Decision (Three Buttons) -->
+      <div class="page page9">
+        <p>
+          Some stories pause, waiting for the right moment to turn the page. I wonder... is now that moment?
+        </p>
+        <div class="nav-buttons">
+          <label class="button" for="page8">⬅️ Back</label>
+          <label class="button" for="page10">Close Letter</label>
+          <label class="button" for="page11">Turn the next page?</label>
+        </div>
+      </div>
+      
+      <!-- Page 10: Final Message – Thanks for Reading -->
+      <div class="page page10">
+        <p>Close Letter: Thanks for reading. ❤️</p>
+        <div class="nav-buttons">
+          <label class="button" for="page9">⬅️ Back</label>
+        </div>
+      </div>
+      
+      <!-- Page 11: Final Message – Talk to the Guy Who Sent You This -->
+      <div class="page page11">
+        <p>Talk to the guy who sent you this. ❤️</p>
+        <div class="nav-buttons">
+          <label class="button" for="page9">⬅️ Back</label>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
